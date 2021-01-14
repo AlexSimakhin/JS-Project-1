@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alexsimakhin.github.io/JS-Project-1",
   "name": "js-personal-projects",
   "version": "0.0.1",
   "description": "Lectrum JS + ES6 course personal projects",
@@ -7,6 +8,8 @@
     "email": "aprisniak@lectrum.io"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
     "start": "webpack serve --mode development --env development --config webpack/webpack.config.dev.js",
     "start:prod": "npm run build && serve build/"
@@ -32,6 +35,7 @@
     "eslint": "^7.11.0",
     "eslint-loader": "^4.0.2",
     "file-loader": "^6.1.1",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
