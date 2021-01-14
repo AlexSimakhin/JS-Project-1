@@ -1,0 +1,12 @@
+.top-bar {
+  display: flex;
+  margin-bottom: 30px;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  &__left,
+  &__right {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}

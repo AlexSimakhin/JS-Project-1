@@ -1,0 +1,29 @@
+.input {
+  height: 50px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 450px;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 15px;
+  }
+
+  &__field {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 45px;
+    background-color: $color-grey-light;
+    border: 0;
+    font-size: 14px;
+    cursor: not-allowed;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

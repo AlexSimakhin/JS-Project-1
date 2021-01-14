@@ -1,0 +1,31 @@
+.featured-item {
+  display: flex;
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 250ms ease-in-out;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  &__info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 25px;
+    font-size: 12px;
+    color: $color-grey-medium-dark;
+    justify-content: center;
+  }
+
+  &:hover,
+  &.active {
+    background: $color-grey-light;
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "price": 165,
+        "title": "Пицца Пепперони с томатами",
+        "img": "img/pizza-1.jpg",
+        "count": 0
+    },
+    {
+        "id": 2,
+        "price": 170,
+        "title": "Пицца Маргарита",
+        "img": "img/pizza-2.jpg",
+        "count": 0
+    },
+    {
+        "id": 3,
+        "price": 209,
+        "title": "Пицца Техас",
+        "img": "img/pizza-3.jpg",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "price": 187,
+        "title": "Пицца Пепперони Блюз",
+        "img": "img/pizza-4.jpg",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "price": 195,
+        "title": "Пицца Гавайская",
+        "img": "img/pizza-5.jpg",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "price": 214,
+        "title": "Пицца ПапараZZи",
+        "img": "img/pizza-6.jpg",
+        "count": 0
+    }
+]

@@ -1,0 +1,45 @@
+.tabs {
+  &__heading {
+    display: flex;
+  }
+
+  &__button {
+    height: 40px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background: $color-grey-light;
+    font-size: 14px;
+    color: $color-grey-medium-dark;
+    border-radius: 8px;
+    transition: 250ms ease-in-out;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &:hover,
+    &.active {
+      background: $color-primary;
+      color: $color-white;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  & .disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      background: $color-grey-light;
+      color: $color-grey-medium-dark;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 -15px;
+  }
+}

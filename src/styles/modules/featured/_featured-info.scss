@@ -1,0 +1,50 @@
+.featured-info {
+  &__block {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  &__average {
+    font-weight: 700;
+    margin-right: 3px;
+    color: $color-grey-dark;
+  }
+
+  &__icon-item {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    &--rate {
+      margin-right: 15px;
+
+      &:before {
+        background-image: url("../assets/icons/star.svg");
+      }
+    }
+
+    &--category {
+      margin-right: 15px;
+
+      &:before {
+        background-image: url("../assets/icons/silverware.svg");
+      }
+    }
+
+    &--money:before {
+      background-image: url("../assets/icons/money.svg");
+    }
+
+    &--distance:before {
+      background-image: url("../assets/icons/location-grey.svg");
+      margin-left: 15px;
+    }
+  }
+}

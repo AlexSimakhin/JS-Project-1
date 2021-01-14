@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Lectrum</title>
+</head>
+<body>
+<div class="wrapper">
+  <aside class="aside">
+    <a href="/" class="logo"><img src="img/logo-main.png" alt="Ням-ням лого"></a>
+    <nav class="navigation">
+      <a class="navigation__item navigation__item--choice" href="/">Выбор</a>
+      <a class="navigation__item navigation__item--saved disabled" href="">Сохраненное</a>
+      <a class="navigation__item navigation__item--orders selected" href="orders.html">Заказы</a>
+      <a class="navigation__item navigation__item--email disabled" href="">Сообщения</a>
+      <a class="navigation__item navigation__item--settings disabled" href="">Настройки</a>
+    </nav>
+    <div class="user">
+      <img class="user__image" src="img/user.svg" alt="">
+      <div>
+        <div class="user__name">Иван Вкуснолюбов</div>
+        <div>ivkusnoljubov@lectrum.io</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <div class="select">
+          <img class="select__icon" src="img/icons/location.svg" alt="">
+          <select class="select__field" name="location">
+            <option class="select__option" value="">Минск, Белоруссия</option>
+            <option class="select__option" value="">Минск, Белоруссия</option>
+            <option class="select__option" value="">Минск, Белоруссия</option>
+          </select>
+        </div>
+
+        <div class="select">
+          <img class="select__icon" src="img/icons/shopping-bag.svg" alt="">
+          <select class="select__field" name="delivery-option">
+            <option class="select__option" value="">Забрать с собой</option>
+            <option class="select__option" value="">Доставить домой</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="top-bar__right">
+        <div class="input">
+          <img class="input__icon" src="img/icons/search.svg" alt="">
+          <input class="input__field" type="text" placeholder="Найти что-нибудь вкусное">
+        </div>
+        <button class="icon-button icon-button--orange">
+          <img src="img/icons/shopping-cart.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="h2">Активные заказы</h2>
+      <div id="active-orders" class="coming-up">
+
+        <!-- <div class="coming-up__item coming-up-item">
+          <div class="coming-up-item__header">
+            <h4 class="h4">Domino’s Pizza</h4>
+            <div class="badge badge--orange">Доставка</div>
+          </div>
+
+          <div class="coming-up-info">
+            <img src="img/icons/clock.svg" alt="">
+            <div class="coming-up-info__content">
+              <div>Заказ будет доставлен через</div>
+              <div class="coming-up-info__title">14 мин</div>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-bar__line" style="width: 60%"></div>
+            <div class="progress-bar__overlay">
+              <div class="progress-bar__item progress-bar__item--first"></div>
+              <div class="progress-bar__item progress-bar__item--sec"></div>
+              <div class="progress-bar__item progress-bar__item--third"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-up__item coming-up-item">
+          <div class="coming-up-item__header">
+            <h4 class="h4">McDonald’s</h4>
+            <div class="badge badge--orange">Готовка</div>
+          </div>
+
+          <div class="coming-up-info">
+            <img src="img/icons/clock.svg" alt="">
+            <div class="coming-up-info__content">
+              <div>Заказ будет доставлен через</div>
+              <div class="coming-up-info__title">37 мин</div>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-bar__line" style="width: 30%"></div>
+            <div class="progress-bar__overlay">
+              <div class="progress-bar__item progress-bar__item--first"></div>
+              <div class="progress-bar__item progress-bar__item--sec"></div>
+              <div class="progress-bar__item progress-bar__item--third"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-up__item coming-up-item">
+          <div class="coming-up-item__header">
+            <h4 class="h4">KFC</h4>
+            <div class="badge badge--orange">Доставка</div>
+          </div>
+
+          <div class="coming-up-info">
+            <img src="img/icons/clock.svg" alt="">
+            <div class="coming-up-info__content">
+              <div>Заказ будет доставлен через</div>
+              <div class="coming-up-info__title">57 мин</div>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-bar__line" style="width: 6%"></div>
+            <div class="progress-bar__overlay">
+              <div class="progress-bar__item progress-bar__item--first"></div>
+              <div class="progress-bar__item progress-bar__item--sec"></div>
+              <div class="progress-bar__item progress-bar__item--third"></div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section>
+      <h2 class="h2">Предыдущие заказы</h2>
+      <div id="previous-orders" class="previous">
+        <!-- <div class="previous__item previous-item">
+          <div class="previous-item__header">
+            <h4 class="h4">Domino’s Pizza</h4>
+            <div class="badge badge--green">Выполнен</div>
+          </div>
+
+          <div class="previous-item-info">
+            <div class="previous-item-info__date">16 сентября 2020</div>
+            <div class="previous-item-info__time">11:54 PM</div>
+          </div>
+
+          <ul class="previous-item-dishes">
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">1</span>
+              Delicious Cheese Pie
+            </li>
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">1</span>
+              Peperoni Pie
+            </li>
+          </ul>
+        </div>
+
+        <div class="previous__item previous-item">
+          <div class="previous-item__header">
+            <h4 class="h4">McDonald’s</h4>
+            <div class="badge badge--red">Отменен</div>
+          </div>
+          <div class="previous-item-info">
+            <div class="previous-item-info__date">16 сентября 2020</div>
+            <div class="previous-item-info__time">11:54 PM</div>
+          </div>
+
+          <ul class="previous-item-dishes">
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">3</span>
+              Delicious Cheese Pie
+            </li>
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">5</span>
+              Peperoni Pie
+            </li>
+          </ul>
+
+          <button class="previous-item-see-more">1 дополнительное наименование</button>
+
+        </div>
+
+        <div class="previous__item previous-item">
+          <div class="previous-item__header">
+            <h4 class="h4">KFC</h4>
+            <div class="badge badge--green">Выполнен</div>
+          </div>
+          <div class="previous-item-info">
+            <div class="previous-item-info__date">16 сентября 2020</div>
+            <div class="previous-item-info__time">11:54 PM</div>
+          </div>
+
+          <ul class="previous-item-dishes">
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">3</span>
+              Delicious Cheese Pie
+            </li>
+            <li class="previous-item-dishes__item">
+              <span class="previous-item-dishes__quantity">1</span>
+              Peperoni Pie
+            </li>
+          </ul>
+
+          <button class="previous-item-see-more">5 дополнительных наименований</button>
+        </div> -->
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<!--  add class 'visible' to open drawer-->
+<div id="drawer" class="overlay">
+  <div class="drawer">
+    <div class="drawer__main">
+      <div class="drawer__header">
+        <h2 class="h2">Мой заказ <span id="drawer-subtitle"  class="subtitle">(0 наименования)</span></h2>
+        <button id="drawer-close" class="icon-button"><img src="img/icons/close.svg" alt=""></button>
+      </div>
+
+      <div class="delivery-option">
+        <div class="delivery-option__title">Доставить</div>
+        <div>по домашнему адресу</div>
+      </div>
+
+      <h2 id="order-name-restaurant" class="h2">McDonald’s</h2>
+      <div class="order">
+        <!-- <div class="order__item order-item">
+          <img class="order-item__image" src="img/mac-2.jpg" alt="">
+          <span class="order-item__quantity">1 X</span>
+          <div class="order-item__info">
+            <h3 class="order-item__title h3">Peperoni Pie</h3>
+            <div class="order-item__price">123 грн</div>
+          </div>
+          <button class="icon-button icon-button--red"><img src="img/icons/delete.svg" alt=""></button>
+        </div>
+
+        <div class="order__item order-item">
+          <img class="order-item__image" src="img/mac-4.jpg" alt="">
+          <span class="order-item__quantity">2 X</span>
+          <div class="order-item__info">
+            <h3 class="order-item__title h3">Cheese Pie</h3>
+            <div class="order-item__price">157 грн</div>
+          </div>
+          <button class="icon-button icon-button--red"><img src="img/icons/delete.svg" alt=""></button>
+        </div> -->
+      </div>
+
+      <button class="add-more">
+        <img class="add-more__icon" src="img/icons/plus-purple.svg" alt="">
+        Добавить еще вкусняшек
+      </button>
+
+      <div class="delivery-price">
+        <img src="img/icons/delivery.svg" alt="">
+        <div class="delivery-price__info">
+          <span class="delivery-price__title">Доставка</span>
+          <span id="span-delivery-price"></span>
+        </div>
+      </div>
+
+      <div class="drawer__footer">
+        <div class="textarea">
+          <label class="textarea__label" for="comments">Ваши пожелания</label>
+          <textarea class="textarea__field" name="comments" id="comments"></textarea>
+        </div>
+
+        <button id="order-submit" class="button">
+          <span class="button__label">Оформить заказ</span> (0 грн)
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

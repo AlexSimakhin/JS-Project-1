@@ -1,0 +1,42 @@
+.progress-bar {
+  height: 6px;
+  position: relative;
+  background-color: rgba($color-grey-medium, .3);
+
+  &__line {
+    height: 100%;
+    background-color: $color-orange;
+    border-radius: 5px;
+  }
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+  }
+
+  &__item {
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 0 3px;
+    box-shadow: 0 0 0 5px $color-grey-light;
+
+    &--first {
+      width: 10%;
+      margin-left: 0;
+    }
+
+    &--sec {
+      width: 30%;
+    }
+
+    &--third {
+      width: 60%;
+      margin-right: 0;
+    }
+  }
+}

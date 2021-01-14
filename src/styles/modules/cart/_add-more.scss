@@ -1,0 +1,18 @@
+.add-more {
+  display: flex;
+  color: $color-primary;
+  font-weight: 600;
+  background: transparent;
+  border: 0;
+  font-size: 16px;
+  margin-bottom: 50px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

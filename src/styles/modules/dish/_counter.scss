@@ -1,0 +1,34 @@
+.counter {
+  display: flex;
+  align-items: center;
+
+  &__number {
+    padding: 0 10px;
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background-color: $color-primary;
+    transition: 250ms ease-in-out;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+
+    &--decrease {
+      background-image: url("../assets/icons/minus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--increase {
+      background-image: url("../assets/icons/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

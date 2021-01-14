@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Lectrum</title>
+  </head>
+  <body>
+  <div class="wrapper">
+    <aside class="aside">
+      <a href="/" class="logo"><img src="img/logo-main.png" alt="Ням-ням лого"></a>
+      <nav class="navigation">
+        <a class="navigation__item navigation__item--choice selected" href="/">Выбор</a>
+        <a class="navigation__item navigation__item--saved disabled" href="#">Сохраненное</a>
+        <a class="navigation__item navigation__item--orders" href="orders.html">Заказы</a>
+        <a class="navigation__item navigation__item--email disabled" href="#">Сообщения</a>
+        <a class="navigation__item navigation__item--settings disabled" href="#">Настройки</a>
+      </nav>
+      <div class="user">
+        <img class="user__image" src="img/user.svg" alt="">
+        <div>
+          <div class="user__name">Иван Вкуснолюбов</div>
+          <div>ivkusnoljubov@lectrum.io</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="top-bar">
+        <div class="top-bar__left">
+          <div class="select">
+            <img class="select__icon" src="img/icons/location.svg" alt="">
+            <select class="select__field" name="location">
+              <option class="select__option" value="">Минск, Белоруссия</option>
+              <option class="select__option" value="">Минск, Белоруссия</option>
+              <option class="select__option" value="">Минск, Белоруссия</option>
+            </select>
+          </div>
+
+          <div class="select">
+            <img class="select__icon" src="img/icons/shopping-bag.svg" alt="">
+            <select class="select__field" name="delivery-option">
+              <option class="select__option" value="">Забрать с собой</option>
+              <option class="select__option" value="">Доставить домой</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="top-bar__right">
+          <div class="input">
+            <img class="input__icon" src="img/icons/search.svg" alt="">
+            <input class="input__field" type="text" placeholder="Найти что-нибудь вкусное">
+          </div>
+          <button class="icon-button icon-button--orange">
+            <img src="img/icons/shopping-cart.svg" alt="">
+            <span class="icon-button__badge">0</span>
+          </button>
+        </div>
+      </div>
+
+      <section>
+        <h2 class="h2">Рекомендуем</h2>
+        <div class="featured">
+          <a href="#" class="featured__item featured-item">
+            <img class="featured-item__img" src="img/logo-pizza.png" alt="Domino’s Pizza">
+            <div class="featured-item__info">
+              <h4 class="h4">Domino’s Pizza</h4>
+
+              <div class="featured-info__block">
+                <span class="featured-info__icon-item featured-info__icon-item--rate">
+                  <span class="featured-info__average">5,0</span>(736)
+                </span>
+                <span class=" featured-info__icon-item featured-info__icon-item--category">Пицца</span>
+                <span class="featured-info__icon-item featured-info__icon-item--money">$$</span>
+              </div>
+
+              <div class="featured-info__block">
+                <span class="badge badge--orange">бесплатная доставка</span>
+                <span class="featured-info__icon-item featured-info__icon-item--distance">2,8 км</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="featured__item featured-item">
+            <img class="featured-item__img" src="img/logo-mac.png" alt="McDonald’s">
+            <div class="featured-item__info">
+              <h4 class="h4">McDonald’s</h4>
+
+              <div class="featured-info__block">
+                <span class="featured-info__icon-item featured-info__icon-item--rate">
+                  <span class="featured-info__average">4,1</span>(959)
+                </span>
+                <span class=" featured-info__icon-item featured-info__icon-item--category">Бургеры</span>
+                <span class="featured-info__icon-item featured-info__icon-item--money">$</span>
+              </div>
+
+              <div class="featured-info__block">
+                <span data-delivery-price="20" class="badge badge--purple">20 грн доставка</span>
+                <span class="featured-info__icon-item featured-info__icon-item--distance">9,0 км</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="featured__item featured-item">
+            <img class="featured-item__img" src="img/logo-kfc.png" alt="KFC">
+
+            <div class="featured-item__info featured-info">
+              <h4 class="h4">KFC</h4>
+
+              <div class="featured-info__block">
+                <span class="featured-info__icon-item featured-info__icon-item--rate">
+                  <span class="featured-info__average">4,4</span>(583)
+                </span>
+                <span class=" featured-info__icon-item featured-info__icon-item--category">Курица</span>
+                <span class="featured-info__icon-item featured-info__icon-item--money">$</span>
+              </div>
+
+              <div class="featured-info__block">
+                <span class="badge badge--orange">бесплатная доставка</span>
+                <span class="featured-info__icon-item featured-info__icon-item--distance">18,6 км</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="tabs">
+        <div class="tabs__heading">
+          <button class="tabs__button active">Популярное (8)</button>
+          <button class="tabs__button disabled">Бургеры (0)</button>
+          <button class="tabs__button disabled">Картошка (0)</button>
+          <button class="tabs__button disabled">Напитки (0)</button>
+          <button class="tabs__button disabled">Наггетсы (0)</button>
+        </div>
+        <div class="tabs__content"></div>
+      </section>
+    </main>
+  </div>
+
+<!--  add class 'visible' to open drawer-->
+  <div id="drawer" class="overlay">
+    <div class="drawer">
+      <div class="drawer__main">
+        <div class="drawer__header">
+          <h2 class="h2">Мой заказ <span id="drawer-subtitle" class="subtitle">(0 наименования)</span></h2>
+          <button id="drawer-close" class="icon-button"><img src="img/icons/close.svg" alt=""></button>
+        </div>
+
+        <div class="delivery-option">
+          <div class="delivery-option__title">Доставить</div>
+          <div>по домашнему адресу</div>
+        </div>
+
+        <h2 id="order-name-restaurant" class="h2">McDonald’s</h2>
+
+        <div class="order"></div>
+
+        <button class="add-more">
+          <img class="add-more__icon" src="img/icons/plus-purple.svg" alt="">
+          Добавить еще вкусняшек
+        </button>
+
+        <div class="delivery-price">
+          <img src="img/icons/delivery.svg" alt="">
+          <div class="delivery-price__info">
+            <span class="delivery-price__title">Доставка</span>
+            <span id="span-delivery-price"></span>
+          </div>
+        </div>
+
+        <div class="drawer__footer">
+          <div class="textarea">
+            <label class="textarea__label" for="comments">Ваши пожелания</label>
+            <textarea class="textarea__field" name="comments" id="comments"></textarea>
+          </div>
+
+          <button id="order-submit" class="button">
+            <span class="button__label">Оформить заказ</span> (0 грн)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

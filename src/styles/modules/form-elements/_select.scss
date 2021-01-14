@@ -1,0 +1,29 @@
+.select {
+  height: 50px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 190px;
+  margin-right: 30px;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+  }
+
+  &__field {
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 35px;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

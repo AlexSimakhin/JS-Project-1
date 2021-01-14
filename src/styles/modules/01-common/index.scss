@@ -1,0 +1,137 @@
+body {
+  font-family: $font-primary;
+}
+
+.wrapper {
+  background: $color-white;
+  font-size: 16px;
+}
+
+.main {
+  padding: 30px 30px 30px 335px;
+}
+
+.h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-grey-dark;
+  display: flex;
+  align-items: center;
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: $color-grey-dark;
+}
+
+.h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: $color-grey-dark;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: $color-grey-medium-dark;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.button {
+  background: $color-primary;
+  height: 65px;
+  width: 100%;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms ease-in-out;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+
+  &__label {
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 3px;
+  }
+
+  &:hover {
+    background: darken($color-primary, 10%);
+  }
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 250ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-grey-light;
+  position: relative;
+
+  &:hover {
+    background-color: darken($color-grey-light, 10%);
+  }
+
+  &--orange {
+    background-color: $color-orange;
+
+    &:hover {
+      background-color: darken($color-orange, 10%);
+    }
+  }
+
+  &--red {
+    background-color: rgba(red, 0.1);
+
+    &:hover {
+      background-color: rgba(red, 0.2);
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 9px;
+  }
+}
+
+.badge {
+  height: 25px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+
+  &--orange {
+    color: $color-orange;
+    background: rgba($color-orange, .1);
+  }
+
+  &--purple {
+    color: $color-primary;
+    background: rgba($color-primary, .1);
+  }
+}

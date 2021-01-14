@@ -1,0 +1,107 @@
+.previous {
+  display: flex;
+  flex-flow: wrap;
+  margin: 35px -15px 0;
+
+  &__item {
+    margin: 0 15px;
+  }
+}
+
+.previous-item {
+  background: $color-grey-light;
+  padding: 15px;
+  border-radius: 15px;
+  flex: 1 0 30.8%;
+  margin-bottom: 30px;
+  max-width: 31.5%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.previous-item-info {
+  display: flex;
+  font-size: 12px;
+  color: $color-grey-medium-dark;
+  margin: 15px 0 25px;
+
+  &__date,
+  &__time {
+    padding-left: 25px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__date {
+    background: url("../assets/icons/calendar.svg") no-repeat;
+    margin-right: 30px;
+  }
+
+  &__time {
+    background: url("../assets/icons/clock16.svg") no-repeat;
+  }
+}
+
+.previous-item-dishes {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-grey-dark;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__quantity {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background: $color-white;
+    color: $color-grey-medium;
+    margin-right: 15px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.previous-item-see-more {
+  color: $color-primary;
+  font-weight: 600;
+  background: none;
+  border: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  &:hover {
+    color: darken($color-primary, 10%)
+  }
+
+  &:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url("../assets/icons/chevron-down.svg");
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 250ms ease-in-out;
+  }
+
+  &.active:after {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,15 @@
+.aside {
+  background: $color-grey-light;
+  padding: 30px 15px;
+  position: fixed;
+  width: 305px;
+  height: 100%;
+  border-radius: 0 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

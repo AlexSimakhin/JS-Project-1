@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "price": 131,
+        "title": "9 стрипсов",
+        "img": "img/kfc-1.png",
+        "count": 0
+    },
+    {
+        "id": 2,
+        "price": 77,
+        "title": "3 ножки",
+        "img": "img/kfc-2.png",
+        "count": 0
+    },
+    {
+        "id": 3,
+        "price": 75,
+        "title": "Байтс Барбекю",
+        "img": "img/kfc-3.png",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "price": 225,
+        "title": "Бакет Дуэт",
+        "img": "img/kfc-4.png",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "price": 93,
+        "title": "Дабл Шефбургер",
+        "img": "img/kfc-5.png",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "price": 65,
+        "title": "Твистер",
+        "img": "img/kfc-6.png",
+        "count": 0
+    }
+]
