@@ -1,6 +1,6 @@
 # Lectrum JS personal project
 
-## Alex Simakhin
+## Alex Simakhin — <a href="https://alexsimakhin.github.io/JS-Project-1/" target="_blank">Site Link</a>
 
 My first personal project using JavaScript.
 
