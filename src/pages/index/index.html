@@ -9,9 +9,9 @@
   <body>
   <div class="wrapper">
     <aside class="aside">
-      <a href="/" class="logo"><img src="img/logo-main.png" alt="Ням-ням лого"></a>
+      <a href="index.html" class="logo"><img src="img/logo-main.png" alt="Ням-ням лого"></a>
       <nav class="navigation">
-        <a class="navigation__item navigation__item--choice selected" href="/">Выбор</a>
+        <a class="navigation__item navigation__item--choice selected" href="index.html">Выбор</a>
         <a class="navigation__item navigation__item--saved disabled" href="#">Сохраненное</a>
         <a class="navigation__item navigation__item--orders" href="orders.html">Заказы</a>
         <a class="navigation__item navigation__item--email disabled" href="#">Сообщения</a>
@@ -52,7 +52,7 @@
             <img class="input__icon" src="img/icons/search.svg" alt="">
             <input class="input__field" type="text" placeholder="Найти что-нибудь вкусное">
           </div>
-          <button class="icon-button icon-button--orange">
+          <button id="icon-button" class="icon-button icon-button--orange">
             <img src="img/icons/shopping-cart.svg" alt="">
             <span class="icon-button__badge">0</span>
           </button>
@@ -176,7 +176,8 @@
           </div>
 
           <button id="order-submit" class="button">
-            <span class="button__label">Оформить заказ</span> (0 грн)
+            <span class="button__label">Оформить заказ</span> 
+            <span class="button__price">(0 грн)</span>
           </button>
         </div>
       </div>

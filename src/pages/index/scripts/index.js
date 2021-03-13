@@ -18,6 +18,7 @@ const cartBlock = document.querySelector('#drawer');
 const order = cartBlock.querySelector('.order');
 const orderNameRestaurant = cartBlock.querySelector('#order-name-restaurant');
 const orderSubmit = cartBlock.querySelector('#order-submit');
+const buttonPrice = cartBlock.querySelector('.button__price');
 const spanDeliveryPrice = cartBlock.querySelector('#span-delivery-price');
 const drawerSubtitle = cartBlock.querySelector('#drawer-subtitle');
 
@@ -204,7 +205,7 @@ const orderList = () => {
 
     order.insertAdjacentHTML('afterbegin', list);
 
-    orderSubmit.childNodes[2].data = `(${orderSum} грн)`;
+    buttonPrice.innerHTML = `(${orderSum} грн)`;
 };
 
 
